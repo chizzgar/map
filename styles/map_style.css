@@ -1,0 +1,170 @@
+.map_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 2em;
+  margin: 0 auto;
+  width: 75%;
+  height: fit-content;
+  user-select: none;
+  /* border: 1px solid black; */
+}
+
+.map_container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+
+.map_img {
+  border-radius: 15px;
+  pointer-events: none;
+}
+
+.dot_img {
+
+}
+
+.draggable_elems {
+  margin: 1em;
+  width: 825px;
+  box-sizing: border-box;
+  padding: 1em;
+
+  box-shadow: -5px -5px 15px #ffffff, 5px 5px 15px #cbcdd3;
+  border-radius: 10px;
+  /* border: 1px solid black; */
+}
+
+.draggable_elems {
+  min-height: 117px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.dragElem {
+  /* border: 1px solid black; */
+  background-color: transparent;
+  cursor: grab;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: fit-content; 
+}
+
+.dragElem > p {
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans;
+  margin: 5px 0 0 0;
+  pointer-events: none;
+}
+
+.dragElem > img {
+  width: 12px;
+  pointer-events: none;
+}
+
+.dragTransition {
+  transition: all 1s;
+}
+
+/* Панель проверки */
+
+.rightAnswer {
+  color: green;
+}
+
+.wrongAnswer {
+  color: red;
+}
+
+.selected {
+  color: blue;
+}
+
+.checkTask {
+  display: flex;
+  justify-content: space-between;
+  width: 825px;
+  border-radius: 12px !important;
+
+}
+
+.chek_answer {
+  display: flex;
+  align-items: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans;
+  font-size: 30px;
+}
+
+.chek_answer > p {
+  margin: 0 0 0 0;
+  font-size: 30px;
+ 
+}
+
+.taskBtn {
+  cursor: pointer !important;
+  transition: all 0.2s ease;
+  box-shadow: -5px -5px 15px #ffffff, 5px 5px 15px #e9ecf4 !important;
+  border: none !important;
+  border-radius: 12px !important;
+  background-color: #0ab7d3 !important;
+  padding: 10px !important;
+  font-size: 26px !important;
+  color: white !important;
+  min-width: 100px !important;
+  margin: 0 !important;
+}
+
+.taskBtn:hover {
+  box-shadow: -5px -5px 15px #b8b7b7, 5px 5px 15px #99999b !important;
+}
+
+/* Точки сброса на карте*/
+
+.dropPlaceElem {
+  box-sizing: border-box;
+  padding: 0 0 6px 0;
+  display: flex;
+  box-shadow: 0 0 10px 5px rgb(240 239 239);
+  position: absolute;
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+
+
+.dropPlaceElem:hover {
+  
+}
+
+
+
+
+
+
+
+/* Хитбоксы для городов на карте*/
+
+/* .mapHitBoxes {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.Sontiago_de_Compostela {
+top: 0px;
+left: 0px;
+} */
