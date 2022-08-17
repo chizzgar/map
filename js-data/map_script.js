@@ -439,7 +439,7 @@
             chek_answerTxt.innerHTML = '<p><span>&#128516;</span>&#8195;Молодец!</p>'
             checkTask.style.background = 'lightgreen'
         } else {
-            chek_answerTxt.innerHTML = '<p><span>&#128528</span>&#8195;Попробуй еще!</p>'
+            chek_answerTxt.innerHTML = '<p><span>&#128577;</span>&#8195;Попробуй еще!</p>'
             checkTask.style.background = 'lightpink'
         }
         winVar = 0;
